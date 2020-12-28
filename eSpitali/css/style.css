@@ -1,0 +1,537 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #444;
+    margin: 0;padding: 0;
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+}
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+.container1
+{
+    width: 62%;
+    height: 100px;
+    margin: 0 auto; 
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    height: 100px;
+}
+#logo {
+    height: 72px;
+    width: 70px;
+}
+/*----Pjesa e <aside> ne anen e majte-----*/
+#slogan
+{
+    float: left;
+    width: 2%;
+    padding-left: 5px;
+}
+#slogan p
+{
+    margin: 0px;padding: 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #444;
+}
+/*UPButoni  per met qu nfillim tfaqes*/
+#fixedbutton
+{
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px; 
+}
+/*----End of Pjesa e <aside> ne anen e majte-----*/
+/*----Pjesa e <nav> ne anen e djathte----*/
+#navbar
+{
+    float: right;
+    width: 90%;
+    margin-top: 20px;
+}
+#navbar ul
+{
+    list-style-type:none;
+    background-color:#ffffff;
+    margin-right: 5px; /*LI tjera mej qit bashk me kto tjerat*/
+    margin-left: 60px;
+    padding-left: 0px!important;
+    
+}
+#navbar ul li
+{
+    display: inline;
+}
+#navbar ul li a
+{
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #444;
+    box-shadow: 3px 3px 15px rgb(156, 141, 224);
+    text-align: center;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+#navbar ul li a:hover,#navbar ul li a:focus
+{
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 4px 4px 15px rgb(0, 0, 0);
+} 
+
+/*----End of Pjesa e <nav> ne anen e djathte----*/
+/**======= End of Header Part=======*/
+
+/*Fillimi i body*/
+#pageintro{padding:180px 0;}
+
+#pageintro article
+{
+    display:inline-block;
+    max-width:75%;
+    }
+#pageintro .heading
+{
+    margin-bottom:20px;
+    font-size:4rem;
+    }
+#pageintro p
+{
+    margin:0 0 20px 0;
+    text-transform:uppercase; 
+    font-size:1.6rem; 
+    letter-spacing:5px;
+}
+.thenie1
+{
+    margin:0 0 20px 0;
+    text-transform:lowercase ; 
+    font-size:1.0rem !important; 
+    letter-spacing:4px;
+}
+#pageintro footer
+{
+    margin-top:50px;
+    margin-left: -38px;
+}
+.btncheckul
+{
+    list-style-type: none;
+}
+
+.btncheckourservice{
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: "Poppins", sans-serif; 
+    font-size: 15px;
+    background: linear-gradient(to right, #555555 0%, #242424 100%);
+    border-radius: 5px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: none;
+    text-decoration: none;
+}
+.healthfoto
+{
+    margin-left: 400px;
+}
+
+/*Fillimi i contentit*/
+/**======= Page Content=======*/
+
+.titledepartments
+{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif; 
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.titledepartments:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 25%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+.faqja1 {
+    min-height: 975px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+/*Vendi i kutis 1*/
+#pjesakryesore{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/*End of Vendi i kutis 1*/
+
+/*Kjo eshte per kutin*/
+.kutia
+{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "image" "text";
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+/*Fillimi per rritje te kutis*/
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.kutia:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); 
+}
+/*Perfundimi per rritjen e kutis*/
+
+/*Fillimi i FOTOVE*/
+.kutiafotomitro
+{
+    grid-area: image;
+    background: url("../images/cover2.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.kutiafotopeje
+{
+    grid-area: image;
+    background: url("../images/radiology.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.kutiafotogjakov
+{
+    grid-area: image;
+    background: url("../images/neurology.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.kutiafotoprizren
+{
+    grid-area: image;
+    background: url("../images/urology.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.kutiafotoferizaj
+{
+    grid-area: image;
+    background: url("../images/stomatology.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.kutiafotogjilan
+{
+    grid-area: image;
+    background: url("../images/ortopedia.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+/*End of FOTOT*/
+.kutiatekst
+{
+    grid-area: text;
+    margin: 25px;
+}
+.kutiatekst>a:hover{
+    color: rgb(255, 0, 106);
+}
+/*Pjesa e dyte e kutijave*/
+#pjesakryesore2
+{
+    display: inline;
+}
+.k
+{
+    margin-top: 40px;
+}
+.kutia2
+{
+    float: left;
+    margin-left: 20px;
+}
+.kutia3
+{
+    float: left;
+    margin-left: 136.5px;
+}
+.kutia4
+{
+    float: right;
+    margin-right: 20px;
+}
+/*Pjesa e 3 e kutijave*/
+.pjesakryesore3
+{
+    border: 2px solid red
+}.kutia5
+{
+    float: left;
+    margin-left: 20px;
+}
+.kutia6
+{
+    float: left;
+    margin-left: 136.5px;
+}
+.kutia7
+{
+    float: right;
+    margin-right: 20px;
+}
+
+/*Fillimi i quotes2*/
+.thenie2
+{
+    width: auto;
+    height: 300px;
+    background-color: #d0e7fd;
+}
+.thenie2p
+{
+    padding: 50px 50px;
+    display: inline;
+    position: relative;
+    top: 131px;
+    left: 15.7%;
+    background-color: #d0e7fd;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing:4px;
+}
+q
+{
+    border-left: 5px solid black;
+    padding-left: 15px;
+}
+/*Perfundimi i contentit*/
+
+/*Fillimi i doktoreve*/
+#dv{
+    width: auto;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #fff;
+}
+h4{
+    font-weight: 200;
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+    line-height: 5;
+    position: relative;
+    bottom: 35px;
+}
+.divdoktoret{
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: #fff;
+    margin-top: 1px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.fotodoktoret
+{
+    height: 299px;
+    width: 299px;
+    border-radius: 15px;
+}
+.txt1{
+    color: rgb(34, 34, 34);
+    position: relative;
+    bottom: 65px;
+}
+.txt2{
+    color: rgb(34, 34, 34);
+    position: relative;
+    bottom: 65px;
+}
+
+/*fundi i doktoreve*/
+
+
+/*Fillimi per THERAPY*/
+#h1therapy
+{
+    color: #33acf3;
+}
+.tabela{
+    width: 95%;
+    margin: 0 auto;
+}
+.tabela h1{
+    color: #009933;
+    padding: 20px 0px 10px 10px;
+    margin: 0px 15px;
+    font-size: 25px;
+    border-bottom: 2px solid #33acf3;
+}
+#tabelaterapia {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 98%;
+    margin: 30px 15px 0px 15px;
+}
+#tabelaterapia td,
+#tabelaterapia th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#tabelaterapia tr:nth-child(even) {
+    background-color: #eee;
+}
+#tabelaterapia tr:hover {
+    background-color: #ddd;
+}
+#tabelaterapia th {
+    padding: 12px;
+    text-align: left;
+    background-color: #364f79;
+    color: white;
+}
+.fa-pencil-square-o{
+    color: #0000ff;
+}
+.fa-trash{
+    color: #ff0000;
+}
+#modifiko i{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#fshiej i {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#shtoterapi
+{
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #364f79;
+    border: none;
+}
+#shtoterapi:hover
+{
+    background-color: #34425a;
+    transform: scale(1.1);
+}
+/*Fillimi per THERAPY*/
+
+
+/*Fundi i body*/
+
+/*Fillimi i footer-it*/
+#footer 
+{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(236, 239, 252);
+}
+#footer p 
+{
+    font-size: 14px;
+    padding-top: 20px;
+    float: left;
+    padding-left: 190px;
+}
+#footer ul 
+{
+    float: right;
+    padding-right: 190px;
+    padding-top: 20px;
+}
+#footer ul li 
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+}
+#footer ul li a img:hover 
+{
+    transform: scale(1.1);
+}
+/*Fundi i footer-it*/
+
+/*Fillimi i Login*/
+.login-page{
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 15px #fff;
+}
+.login-page h1{
+    color: #419ff8;
+    text-align: center;
+}
+.login-page input[type="text"],.login-page input[type="email"], .login-page input[type="password"]{
+    outline: none;
+    width: 90%;
+    margin: 2% 5%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #83C4FF;
+}
+.login-page input[type="submit"]{
+    text-decoration: none;
+    text-align: center;
+    background-color: #5DB2FF;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border: none;
+    margin-bottom: 70px;
+    border: 3px solid #fff;
+}
+.login-page input[type="submit"]:hover{
+    background-color: #fff;
+    color: #5DB2FF;
+    border: 3px solid #5DB2FF;
+}
+
+/*Fillimi i Login*/
